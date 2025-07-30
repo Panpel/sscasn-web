@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard Peserta - SSCASN</title>
+  <link rel="stylesheet" href="css/dashboard.css" />
+</head>
+<body>
+  <header>
+    <h1>SSCASN | Dashboard Peserta</h1>
+    <nav>
+      <a href="dashboard.html">Beranda</a>
+      <a href="upload.html">Upload Dokumen</a>
+      <a href="index.html">Logout</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Formulir Daftar Riwayat Hidup (DRH)</h2>
+    <form id="drhForm">
+      <label>NIK</label>
+      <input type="text" required />
+
+      <label>Nama Lengkap</label>
+      <input type="text" required />
+
+      <label>Tempat Lahir</label>
+      <input type="text" required />
+
+      <label>Tanggal Lahir</label>
+      <input type="date" required />
+
+      <label>Jenis Kelamin</label>
+      <select required>
+        <option value="">--Pilih--</option>
+        <option>Laki-laki</option>
+        <option>Perempuan</option>
+      </select>
+
+      <label>Alamat Domisili</label>
+      <textarea rows="3" required></textarea>
+
+      <label>Nomor HP</label>
+      <input type="text" required />
+
+      <label>Email</label>
+      <input type="email" required />
+
+      <button type="submit">Simpan DRH</button>
+    </form>
+  </main>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

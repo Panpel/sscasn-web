@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Upload Dokumen - SSCASN</title>
+  <link rel="stylesheet" href="css/upload.css" />
+</head>
+<body>
+  <header>
+    <h1>SSCASN | Upload Dokumen</h1>
+    <nav>
+      <a href="dashboard.html">DRH</a>
+      <a href="upload.html">Upload Dokumen</a>
+      <a href="index.html">Logout</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Upload Berkas</h2>
+    <form id="uploadForm">
+      <label>Upload KTP (PDF/JPG)</label>
+      <input type="file" accept=".pdf, .jpg, .jpeg, .png" required />
+
+      <label>Upload Ijazah (PDF)</label>
+      <input type="file" accept=".pdf" required />
+
+      <label>Upload Pas Foto (JPG)</label>
+      <input type="file" accept=".jpg, .jpeg, .png" required />
+
+      <button type="submit">Kirim Dokumen</button>
+    </form>
+  </main>
+
+  <script src="js/upload.js"></script>
+</body>
+</html>
